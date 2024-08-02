@@ -47,7 +47,7 @@ public class ConversionToPDFBase64 {
 
 	
 	private static void printLog(String value) {
-		System.out.println("ConversionToPDFBase64."+ value);
+		System.out.println("ConversionToPDFBase64. HIIIII"+ value);
 	}
 
 	public static void main(String[] args) {
