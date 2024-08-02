@@ -2149,7 +2149,7 @@ public class UserManager {
 
 					var matchROI = roi.stream().filter(p -> p.loanAccountNumber.equals((clContract.name))).findFirst();
 
-					if (!matchROI.isEmpty()) {
+//					if (!matchROI.isEmpty()) {
 
 						matchROI.get().isEligible = true;
 						matchROI.get().updateDatetime = DateTimeUtils.getCurrentDateTimeInIST();
@@ -2166,7 +2166,7 @@ public class UserManager {
 
 						roiList.add(matchROI.get());
 
-					}
+//					}
 				}
 
 			});
