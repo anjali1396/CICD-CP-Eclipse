@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!-- The contents of this file will be loaded for each web application -->
+<Context>
+
+    <!-- Default set of monitored resources. If one of these changes, the    -->
+    <!-- web application will be reloaded.                                   -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
+	
+	<!-- p@radise7_mysql -->
+	<!-- Sarika@mysql7 -->
+	<!-- Ranan#123 -->
+	<!-- Anjali@123 -->
+	<!-- Hffc@123 -->
+	
+	<!-- TODO: LOCAL DB URL -->
+
+
+<!-- 	  <Resource name="jdbc/hffc_db_local_server"
+          auth="Container"
+          type="javax.sql.DataSource"
+          factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+          maxTotal="200"
+          maxWaitMillis="24000"
+          maxIdle="10"
+          removeAbandonedOnBorrow="true"
+          logAbandoned="true"
+          username="root"
+          password="sid@123"
+          driverClassName="com.mysql.cj.jdbc.Driver"
+          validationQuery="SELECT 1"
+          testOnBorrow="true"
+          url="jdbc:mysql://localhost:3306/HomeFirstCustomerPortal?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true"/>
+  -->
+
+
+   <!-- TODO: STAGING DB URL -->
+
+    
+   <!--   <Resource name="jdbc/hffc_db_staging_server"
+          auth="Container"
+          type="javax.sql.DataSource"
+          factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+          maxTotal="200"
+          maxWaitMillis="24000"
+          maxIdle="10"
+          removeAbandonedOnBorrow="true"
+          logAbandoned="true"
+          username="naol"
+          password="$Hffc9_SarikaML"
+          driverClassName="com.mysql.cj.jdbc.Driver"
+          validationQuery="SELECT 1"
+          testOnBorrow="true"
+          url="jdbc:mysql://65.2.48.131:3306/HomeFirstCustomerPortal?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true"/>
+
+  
+          <!-- url="jdbc:mysql://65.2.48.131:2132/HomeFirstCustomerPortal?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true" 
+          url="jdbc:mysql://127.0.0.1:3306/HomeFirstCustomerPortal?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true"-->
+        
+    <!-- TODO: Apps_homefirstindia_server DB URL -->
+
+	<!-- <Resource name="jdbc/hffc_db_staging_server"
+          auth="Container"
+          type="javax.sql.DataSource"
+          factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+          maxTotal="200"
+          maxWaitMillis="24000"
+          maxIdle="10"
+          removeAbandonedOnBorrow="true"
+          logAbandoned="true"
+          username="root"
+          password="#ff(7_@pP$"
+          driverClassName="com.mysql.cj.jdbc.Driver"
+          validationQuery="SELECT 1"
+        testOnBorrow="true"
+          url="jdbc:mysql://127.0.0.1:3306/HomeFirstCustomerPortal?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true"/>
+           -->
+    
+
+    <!-- TODO: PRODUCTION DB URL -->
+   
+
+     <!-- <Resource name="jdbc/hffc_db_server"
+          auth="Container"
+          type="javax.sql.DataSource"
+          factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+          maxTotal="200"
+          maxWaitMillis="24000"
+          maxIdle="10"
+          removeAbandonedOnBorrow="true"
+          logAbandoned="true"
+          username="masternaol_hffc"
+          password="$Hffc_masternaol7"
+          driverClassName="com.mysql.cj.jdbc.Driver"
+          validationQuery="SELECT 1"
+          testOnBorrow="true"
+          url="jdbc:mysql://hffccustomerportal.c5jfvga5d4bj.ap-south-1.rds.amazonaws.com:3306/HomeFirstCustomerPortal?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true"/> 
+ -->
+ 
+
+
+    <!-- Uncomment this to disable session persistence across Tomcat restarts -->
+    <!--
+    <Manager pathname="" />true
+    -->
+
+    <!-- Uncomment this to enable Comet connection tacking (provides events
+         on session expiration as well as webapp lifecycle) -->
+    <!--
+    <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
+    -->
+</Context>
