@@ -24,12 +24,12 @@
 			<param-name>cors.allowed.origins</param-name>
 			<!-- TODO: secure traffic only from home first domain here -->
 			<param-value>
-			<!--   *   -->
-			https://test.homefirstindia.com,
+			  *  
+			<!-- https://test.homefirstindia.com,
             https://apps.homefirstindia.com,
             https://one.homefirstindia.com,
             https://customers.homefirstindia.com,
-            https://developer.homefirstindia.com
+            https://developer.homefirstindia.com -->
             </param-value>
 		</init-param>
 		<init-param>

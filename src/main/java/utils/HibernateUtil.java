@@ -56,12 +56,20 @@ public class HibernateUtil {
 				
 				settings.put(Environment.USER, "root");
 				
+//				if (Constants.IS_STAGING) {
+//					settings.put(Environment.USER, "naol");
+//					settings.put(Environment.URL, "jdbc:mysql://65.2.48.131:3306/HomeFirstCustomerPortal?useUnicode=true&autoReconnect=true");
+//					settings.put(Environment.PASS, "$Hffc9_SarikaML");
+//					
+//				}
 				if (Constants.IS_STAGING) {
-					settings.put(Environment.USER, "naol");
-					settings.put(Environment.URL, "jdbc:mysql://65.2.48.131:3306/HomeFirstCustomerPortal?useUnicode=true&autoReconnect=true");
-					settings.put(Environment.PASS, "$Hffc9_SarikaML");
+					settings.put(Environment.USER, "write_user");
+					settings.put(Environment.URL, "jdbc:mysql://mobility-staging-db.cjminpnxnvgv.ap-south-1.rds.amazonaws.com:3306/HomeFirstCustomerPortal?createDatabaseIfNotExist=true");
+					settings.put(Environment.PASS, "Px7G0Dqx99LignQsGs");
 					
-				} else {
+				}
+				
+				else {
 					
 					// p@radise7_mysql - rabit
 					// Ranan#123 - Ranan	

@@ -38,7 +38,7 @@
    <!-- TODO: STAGING DB URL -->
 
     
-   <!--   <Resource name="jdbc/hffc_db_staging_server"
+<!--      <Resource name="jdbc/hffc_db_staging_server"
           auth="Container"
           type="javax.sql.DataSource"
           factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
@@ -53,10 +53,29 @@
           validationQuery="SELECT 1"
           testOnBorrow="true"
           url="jdbc:mysql://65.2.48.131:3306/HomeFirstCustomerPortal?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true"/>
-
+ -->
+ 
+ 
+      <Resource name="jdbc/hffc_db_staging_server"
+          auth="Container"
+          type="javax.sql.DataSource"
+          factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+          maxTotal="200"
+          maxWaitMillis="24000"
+          maxIdle="10"
+          removeAbandonedOnBorrow="true"
+          logAbandoned="true"
+          username="write_user"
+          password="Px7G0Dqx99LignQsGs"
+          driverClassName="com.mysql.cj.jdbc.Driver"
+          validationQuery="SELECT 1"
+          testOnBorrow="true"
+          url="jdbc:mysql://mobility-staging-db.cjminpnxnvgv.ap-south-1.rds.amazonaws.com:3306/HomefirstOne?createDatabaseIfNotExist=true"/>
+ 
+ 
   
           <!-- url="jdbc:mysql://65.2.48.131:2132/HomeFirstCustomerPortal?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true" 
-          url="jdbc:mysql://127.0.0.1:3306/HomeFirstCustomerPortal?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true"-->
+          url="jdbc:mysql://127.0.0.1:3306/HomeFirstCustomerPortal?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true"
         
     <!-- TODO: Apps_homefirstindia_server DB URL -->
 
