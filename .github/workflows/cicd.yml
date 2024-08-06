@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-deploy:
-    name: Build & Deploy Customer Portal Backend
+    name: Build & Deploy Customer Portal
     runs-on: ubuntu-latest
 
     steps:
