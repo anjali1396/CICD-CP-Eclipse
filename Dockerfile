@@ -2,7 +2,7 @@
 FROM tomcat:9.0
 
 # Copy the WAR file to the webapps directory of Tomcat
-COPY target/HFCustomerPortalServer.war /usr/local/tomcat/webapps/HFCustomerPortalServer.war
+COPY target/HFCustomerPortalServer-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/HFCustomerPortalServer.war
 
 # Expose the default Tomcat port
 EXPOSE 8080
